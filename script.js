@@ -1,11 +1,11 @@
-const clip = document.querySelector('.track-3 .clip.two');
+const clip = document.querySelector('.clip');
 
-clip.addEventListener('click', () => {
-    console.log('hello');
-    playAudio();
+clip.addEventListener('click', (e) => {
+    console.log(e.target.id);
+    playAudio(e.target.id);
 });
 
-function playAudio () {
-    const audio = new Audio('press.wav');
+function playAudio (id) {
+    const audio = new Audio(id);
     audio.play();
 }
