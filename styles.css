@@ -67,7 +67,7 @@ iframe {
     height: 30vw;
 }
 
-.track-3 {
+.design div {
     display: flex;
     height: calc(30vw / 7);
 }
@@ -76,7 +76,7 @@ iframe {
     background-color: purple;
 }
 
-.track-3 .blank {
+.design .blank {
     background-color: grey;
 }
 
@@ -122,6 +122,82 @@ iframe {
 
 .track-3 .eleven {
     flex: 1;
+}
+
+.track-4 .clip {
+    background-color: rgb(43, 43, 183);
+}
+
+.track-4 .one {
+    flex: 1;
+}
+
+.track-4 .two {
+    flex: 2;
+}
+
+.track-4 .three {
+    flex: 3;
+}
+
+.track-4 .four {
+    flex: 2;
+}
+
+.track-4 .five {
+    flex: 15;
+}
+
+.track-4 .six {
+    flex: 2;
+}
+
+.track-4 .seven {
+    flex: 1;
+}
+
+.track-5 .clip {
+    background-color: green;
+}
+
+.track-5 .one {
+    flex: 4;
+}
+
+.track-5 .two {
+    flex: 4;
+}
+
+.track-5 .three {
+    flex: 1;
+}
+
+.track-5 .four {
+    flex: 3;
+}
+
+.track-5 .five {
+    flex: 1;
+}
+
+.track-5 .six {
+    flex: 6;
+}
+
+.track-5 .seven {
+    flex: 2;
+}
+
+.track-5 .eight {
+    flex: 4;
+}
+
+.track-5 .nine {
+    flex: 4;
+}
+
+.track-5 .ten {
+    flex: 3;
 }
 
 footer {
