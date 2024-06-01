@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    text-align: center  ;
+    text-align: center;
 }
 
 :root {
@@ -55,6 +55,25 @@ p {
 
 iframe {
     height: 500px;
+}
+
+.design {
+    width: 60vw;
+    height: 30vw;
+}
+
+.track-3 {
+    display: flex;
+    height: calc(30vw / 7);
+}
+
+.track-3 .clip {
+    background-color: purple;
+    flex: 2;
+}
+
+.track-3 .blank {
+    flex: 1;
 }
 
 footer {
