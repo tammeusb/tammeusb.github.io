@@ -73,11 +73,24 @@ iframe {
 }
 
 .track-3 .clip {
-    background-color: purple;
+    background-color: rgb(64, 7, 114);
+}
+
+.track-3 .clip:hover {
+    background-color: rgb(146, 100, 186);
+    border: 1px solid white;
+}
+
+.track-3 .clip:active {
+    background-color: rgb(42, 17, 64);
 }
 
 .design .blank {
     background-color: grey;
+}
+
+.track-3 .zero {
+    flex: 4;
 }
 
 .track-3 .one {
@@ -124,16 +137,29 @@ iframe {
     flex: 1;
 }
 
+.track-3 .twelve {
+    flex: 3;
+}
+
 .track-4 .clip {
-    background-color: rgb(43, 43, 183);
+    background-color: rgb(194, 76, 192);
+}
+
+.track-4 .clip:hover {
+    background-color: rgb(219, 123, 217);
+    border: 1px solid white;
+}
+
+.track-4 .clip:active {
+    background-color: rgb(95, 29, 94);
 }
 
 .track-4 .one {
-    flex: 1;
+    flex: 3;
 }
 
 .track-4 .two {
-    flex: 2;
+    flex: 3 ;
 }
 
 .track-4 .three {
@@ -141,7 +167,7 @@ iframe {
 }
 
 .track-4 .four {
-    flex: 2;
+    flex: 3;
 }
 
 .track-4 .five {
@@ -149,19 +175,28 @@ iframe {
 }
 
 .track-4 .six {
-    flex: 2;
+    flex: 3;
 }
 
 .track-4 .seven {
-    flex: 1;
+    flex: 2;
 }
 
 .track-5 .clip {
-    background-color: green;
+    background-color: rgb(23, 105, 172);
+}
+
+.track-5 .clip:hover {
+    background-color: rgb(56, 150, 226);
+    border: 1px solid white;
+}
+
+.track-5 .clip:active {
+    background-color: rgb(22, 64, 99);
 }
 
 .track-5 .one {
-    flex: 4;
+    flex: 6;
 }
 
 .track-5 .two {
@@ -198,6 +233,10 @@ iframe {
 
 .track-5 .ten {
     flex: 3;
+}
+
+.track-5 .eleven {
+    flex: 1;
 }
 
 footer {
