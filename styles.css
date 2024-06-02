@@ -239,6 +239,125 @@ iframe {
     flex: 1;
 }
 
+.track-6 .clip {
+    background-color: rgb(203, 0, 0);
+}
+
+.track-6 .clip:hover {
+    background-color: rgb(252, 55, 55);
+    border: 1px solid white;
+}
+
+.track-6 .clip:active {
+    background-color: rgb(93, 0, 0);
+}
+
+.track-6 .one {
+    flex: 4;
+}
+
+.track-6 .two {
+    flex: 6;
+}
+
+.track-6 .three {
+    flex: 1;
+}
+
+.track-6 .four {
+    flex: 5;
+}
+
+.track-6 .five {
+    flex: 4;
+}
+
+.track-6 .six {
+    flex: 5;
+}
+
+.track-6 .seven {
+    flex: 3;
+}
+
+.track-6 .eight {
+    flex: 6;
+}
+
+.track-6 .nine {
+    flex: 4;
+}
+
+.track-7 .clip {
+    background-color: rgb(206, 153, 255);
+}
+
+.track-7 .clip:hover {
+    background-color: rgb(225, 195, 254);
+    border: 1px solid white;
+}
+
+.track-7 .clip:active {
+    background-color: rgb(192, 124, 255);
+}
+
+.track-7 .one {
+    flex: 3;
+}
+
+.track-7 .two {
+    flex: 4;
+}
+
+.track-7 .three {
+    flex: 15;
+}
+
+.track-7 .four {
+    flex: 8;
+}
+
+.track-7 .five {
+    flex: 6;
+}
+
+.track-8 .clip {
+    background-color: rgb(32, 185, 70);
+}
+
+.track-8 .clip:hover {
+    background-color: rgb(103, 230, 135);
+    border: 1px solid white;
+}
+
+.track-8 .clip:active {
+    background-color: rgb(14, 114, 39);
+}
+
+.track-8 .one {
+    flex: 17;
+}
+
+.track-8 .two {
+    flex: 2;
+}
+
+.track-8 .three {
+    flex: 1;
+}
+
+.track-8 .four {
+    flex: 2;
+}
+
+.track-8 .five {
+    flex: 17;
+}
+
+.track-9 .blank {
+    flex: 1;
+}
+
 footer {
     font-size: 2rem;
     width: 100%;
