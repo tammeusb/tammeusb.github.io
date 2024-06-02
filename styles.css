@@ -65,11 +65,76 @@ iframe {
 .design {
     width: 60vw;
     height: 30vw;
+
+    border: 10px solid black;
+    border-radius: 10px;
 }
 
 .design div {
     display: flex;
-    height: calc(30vw / 7);
+    height: calc(30vw / 10.333);
+}
+
+.track-0 .blank {
+    flex: 1;
+}
+
+.track-1 .clip {
+    background-color: green;
+}
+
+.track-1 .clip:hover {
+    background-color: rgb(59, 247, 59);
+    border: 1px soild white;
+}
+
+.track-1 .clip:active {
+    background-color: rgb(3, 82, 3);
+}
+
+.track-1 .one {
+    flex: 2;
+}
+
+.track-1 .two {
+    flex: 4;
+}
+
+.track-1 .three {
+    flex: 50;
+}
+
+.track-2 .clip {
+    background-color: rgb(221, 221, 53);
+}
+
+.track-2 .clip:hover {
+    background-color: rgb(255, 255, 202);
+    border: 1px solid white;
+}
+
+.track-2 .clip:active {
+    background-color: rgb(150, 150, 11);
+}
+
+.track-2 .one {
+    flex: 4;
+}
+
+.track-2 .two {
+    flex: 4;
+}
+
+.track-2 .three {
+    flex: 60;
+}
+
+.track-2 .four {
+    flex: 4;
+}
+
+.track-2 .five {
+    flex: 5;
 }
 
 .track-3 .clip {
