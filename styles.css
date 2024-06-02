@@ -17,7 +17,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    height: 150vh;
+    height: 200vh;
     margin: 0 auto;
 }
 
@@ -68,11 +68,17 @@ iframe {
 
     border: 10px solid black;
     border-radius: 10px;
+
+    margin-bottom: 10rem;
 }
 
 .design div {
     display: flex;
     height: calc(30vw / 10.333);
+}
+
+.quote-container {
+    width: max(60vw, 200px);
 }
 
 .track-0 .blank {
