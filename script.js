@@ -24,6 +24,8 @@ playButton.addEventListener('click', () => {
         return 'already running';
     }
     movePlayhead();
+    const fullMix = new Audio('audio/SFC_website_stereo.wav');
+    fullMix.play();
 });
 
 function movePlayhead() {
@@ -37,7 +39,7 @@ function movePlayhead() {
             clearInterval(timer);
             resetPosition();
         }
-    },100);
+    },170);
 }
 
 function resetPosition() {
