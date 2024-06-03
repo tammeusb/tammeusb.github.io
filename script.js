@@ -15,11 +15,11 @@ function playAudio (id) {
 const playButton = document.querySelector('button.play');
 const playHead = document.querySelector('.playhead');
 
-let leftPosition = 40;
+let leftPosition = 20;
 
 playButton.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 40) {
+    if (leftPosition > 20) {
         console.log('already running');
         return 'already running';
     }
@@ -30,17 +30,17 @@ function movePlayhead() {
     let count = 0;
 
     const timer = setInterval(function() {
-        playHead.style.left = leftPosition + 'vh';
-        leftPosition += 2;
+        playHead.style.left = leftPosition + 'vw';
+        leftPosition += 1;
         console.log(leftPosition);
-        if (leftPosition > 150) {
+        if (leftPosition > 80) {
             clearInterval(timer);
             resetPosition();
         }
-    },200);
+    },100);
 }
 
 function resetPosition() {
-    leftPosition = 40;
+    leftPosition = 20;
     playHead.style.left = leftPosition + 'vh';
 }
