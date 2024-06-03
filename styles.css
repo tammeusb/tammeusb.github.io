@@ -81,6 +81,11 @@ iframe {
     width: max(60vw, 200px);
 }
 
+.logo-container img {
+    height: 3rem;
+    width: 3rem;
+}
+
 .track-0 .blank {
     flex: 1;
 }
