@@ -78,10 +78,15 @@ button.play {
 
 .design {
     width: 60vw;
-    height: 30vw;
+    height: 31vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 
     border: 10px solid black;
     border-radius: 10px;
+    background-color: rgb(98, 98, 98);
 
     margin-bottom: 10rem;
 }
@@ -129,6 +134,7 @@ button.play {
 .track-1 .clip:hover {
     background-color: rgb(59, 247, 59);
     border: 1px soild white;
+    cursor: pointer;
 }
 
 .track-1 .clip:active {

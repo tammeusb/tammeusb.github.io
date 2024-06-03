@@ -15,20 +15,32 @@ function playAudio (id) {
 const playButton = document.querySelector('button.play');
 const playHead = document.querySelector('.playhead');
 
+let leftPosition = 40;
+
 playButton.addEventListener('click', () => {
     console.log('click');
+    if (leftPosition > 40) {
+        console.log('already running');
+        return 'already running';
+    }
     movePlayhead();
 });
 
 function movePlayhead() {
     let count = 0;
-    let leftPosition = 30;
 
     const timer = setInterval(function() {
         playHead.style.left = leftPosition + 'vh';
-        leftPosition++;
+        leftPosition += 2;
         console.log(leftPosition);
-        if (leftPosition > 80) clearInterval(timer);
+        if (leftPosition > 150) {
+            clearInterval(timer);
+            resetPosition();
+        }
     },200);
+}
 
+function resetPosition() {
+    leftPosition = 40;
+    playHead.style.left = leftPosition + 'vh';
 }
