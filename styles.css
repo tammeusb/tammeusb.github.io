@@ -71,7 +71,7 @@ iframe {
     margin-bottom: 5rem;
 }
 
-button.play {
+button.play, button.stop {
     width: 10rem;
     height: 4rem;
 }

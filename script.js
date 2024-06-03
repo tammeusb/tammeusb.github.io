@@ -13,25 +13,39 @@ function playAudio (id) {
 }
 
 const playButton = document.querySelector('button.play');
+const stopButton = document.querySelector('button.stop');
 const playHead = document.querySelector('.playhead');
 
+let timer = null;
+
 let leftPosition = 20;
+const fullMix = new Audio('audio/SFC_website_stereo.wav');
 
 playButton.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 20) {
+    if (leftPosition > 20) {    
         console.log('already running');
         return 'already running';
     }
     movePlayhead();
-    const fullMix = new Audio('audio/SFC_website_stereo.wav');
     fullMix.play();
 });
 
+
+stopButton.addEventListener('click', () => {
+    if (leftPosition > 20) {
+        console.log('stop')
+        fullMix.pause();
+        fullMix.currentTime = 0;
+        clearInterval(timer);
+        resetPosition();
+    }  
+});    
+
 function movePlayhead() {
     let count = 0;
-
-    const timer = setInterval(function() {
+    
+    timer = setInterval(function() {
         playHead.style.left = leftPosition + 'vw';
         leftPosition += 1;
         console.log(leftPosition);
