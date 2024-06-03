@@ -83,7 +83,18 @@ iframe {
 
 .design div {
     display: flex;
+    position: relative;
     height: calc(30vw / 10.333);
+}
+
+.design span.playhead {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    height: inherit;
+    left: 20vw;
+    width: 2px;
+    background-color: white;
 }
 
 .quote-container,
@@ -91,6 +102,10 @@ iframe {
 .contact-container, 
 .content p {
     width: max(60vw, 200px);
+}
+
+.about-container img {
+    border-radius: 50%;
 }
 
 .logo-container img {
