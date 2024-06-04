@@ -36,7 +36,7 @@ stopButton.addEventListener('click', () => {
     if (leftPosition > 20) {
         console.log('stop')
         fullMix.pause();
-        fullMix.currentTime = 0;
+        fullMix.currentTime = 0;    
         clearInterval(timer);
         resetPosition();
     }  
