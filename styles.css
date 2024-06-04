@@ -4,7 +4,9 @@
 }
 
 :root {
-    --dark-background: rgb(240, 154, 154);
+    --dark-background: rgb(55, 100, 197);
+    --light-background: rgb(72, 127, 244);
+    --light-text: white;
 }
 
 .dark {
@@ -19,11 +21,28 @@ body {
 
     height: 200vh;
     margin: 0 auto;
+
+    background-color: var(--light-background);
 }
 
 header {
     width: 100%;
+    min-height: 30rem;
     text-align: center;
+    color: var(--light-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url("./images/waveform-background.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 60px 12px rgb(0, 0, 0);
+
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 
 nav {
