@@ -1,11 +1,12 @@
 * {
     box-sizing: border-box;
     text-align: center;
+
 }
 
 :root {
-    --dark-background: rgb(55, 100, 197);
-    --light-background: rgb(72, 127, 244);
+    --dark-background: rgb(8, 84, 247);
+    --light-background: rgb(8, 84, 247);
     --light-text: white;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -145,9 +146,10 @@ button.play, button.stop {
     background-position: 50% 70%;
     background-repeat: repeat-x;
     background-size: 100px 100px;
+
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0) inset;
 }
 
-.quote-container,
 .about-container,
 .contact-container, 
 .content p {
@@ -158,9 +160,35 @@ button.play, button.stop {
     border-radius: 50%;
 }
 
+.quote-container {
+    background-image: url("./images/waveform-background.jpg");
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 60px 12px rgb(0, 0, 0);
+
+}
+
+.logo-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-container img {
     height: 3rem;
     width: 3rem;
+}
+
+.logo-container span {
+    font-size: 2rem;
 }
 
 .track-0 .blank {
