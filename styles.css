@@ -45,9 +45,9 @@ body {
 
 p {
     padding: 5rem;
-    font-size: 2rem;
-    width: 60ch;
-    max-width: 100%;
+    font-size: calc(0.5rem + 1.5vw);
+    max-inline-size: 60ch;
+    min-inline-size: 30ch;
     font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
     font-weight: 300;
 }
@@ -56,6 +56,7 @@ p {
 h1 {
     margin-bottom: 2rem;
     margin-top: 5rem;
+    font-size: calc(2rem + 2vw);
     font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
     font-weight: normal;
 }
