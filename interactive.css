@@ -1,0 +1,393 @@
+button.play, button.stop {
+    width: 10rem;
+    height: 4rem;
+}
+
+.design {
+    width: 60vw;
+    height: 31vw;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color: rgb(98, 98, 98);
+
+    margin-bottom: 10rem;
+}
+
+.design div {
+    display: flex;
+    position: relative;
+    height: calc(30vw / 10.333);
+}
+
+.design span.playhead {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    height: inherit;
+    left: 20vw;
+    width: 3px;
+    background-color: white;
+}
+
+.clip {
+    background-image: url("images/clip.svg");
+    background-position: 50% 70%;
+    background-repeat: repeat-x;
+    background-size: 100px 100px;
+
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0) inset;
+}
+
+.track-0 .blank {
+    flex: 1;
+}
+
+.track-1 .clip {
+    background-color: green;
+}
+
+.track-1 .clip:hover {
+    background-color: rgb(59, 247, 59);
+    border: 1px soild white;
+    cursor: pointer;
+}
+
+.track-1 .clip:active {
+    background-color: rgb(3, 82, 3);
+}
+
+.track-1 .one {
+    flex: 2;
+}
+
+.track-1 .two {
+    flex: 4;
+}
+
+.track-1 .three {
+    flex: 50;
+}
+
+.track-2 .clip {
+    background-color: rgb(221, 221, 53);
+}
+
+.track-2 .clip:hover {
+    background-color: rgb(255, 255, 202);
+    border: 1px solid white;
+}
+
+.track-2 .clip:active {
+    background-color: rgb(150, 150, 11);
+}
+
+.track-2 .one {
+    flex: 4;
+}
+
+.track-2 .two {
+    flex: 4;
+}
+
+.track-2 .three {
+    flex: 60;
+}
+
+.track-2 .four {
+    flex: 4;
+}
+
+.track-2 .five {
+    flex: 5;
+}
+
+.track-3 .clip {
+    background-color: rgb(64, 7, 114);
+}
+
+.track-3 .clip:hover {
+    background-color: rgb(146, 100, 186);
+    border: 1px solid white;
+}
+
+.track-3 .clip:active {
+    background-color: rgb(42, 17, 64);
+}
+
+.design .blank {
+    background-color: grey;
+}
+
+.track-3 .zero {
+    flex: 4;
+}
+
+.track-3 .one {
+    flex: 3;
+}
+
+.track-3 .two {
+    flex: 3;
+}
+
+.track-3 .three {
+    flex: 1;
+}
+
+.track-3 .four {
+    flex: 3;
+}
+
+.track-3 .five {
+    flex: 2;
+}
+
+.track-3 .six {
+    flex: 3;
+}
+
+.track-3 .seven {
+    flex: 10;
+}
+
+.track-3 .eight {
+    flex: 3;
+}
+
+.track-3 .nine {
+    flex: 10;
+}
+
+.track-3 .ten {
+    flex: 2;
+}
+
+.track-3 .eleven {
+    flex: 1;
+}
+
+.track-3 .twelve {
+    flex: 3;
+}
+
+.track-4 .clip {
+    background-color: rgb(194, 76, 192);
+}
+
+.track-4 .clip:hover {
+    background-color: rgb(219, 123, 217);
+    border: 1px solid white;
+}
+
+.track-4 .clip:active {
+    background-color: rgb(95, 29, 94);
+}
+
+.track-4 .one {
+    flex: 3;
+}
+
+.track-4 .two {
+    flex: 3 ;
+}
+
+.track-4 .three {
+    flex: 3;
+}
+
+.track-4 .four {
+    flex: 3;
+}
+
+.track-4 .five {
+    flex: 15;
+}
+
+.track-4 .six {
+    flex: 3;
+}
+
+.track-4 .seven {
+    flex: 2;
+}
+
+.track-5 .clip {
+    background-color: rgb(23, 105, 172);
+}
+
+.track-5 .clip:hover {
+    background-color: rgb(56, 150, 226);
+    border: 1px solid white;
+}
+
+.track-5 .clip:active {
+    background-color: rgb(22, 64, 99);
+}
+
+.track-5 .one {
+    flex: 6;
+}
+
+.track-5 .two {
+    flex: 4;
+}
+
+.track-5 .three {
+    flex: 1;
+}
+
+.track-5 .four {
+    flex: 3;
+}
+
+.track-5 .five {
+    flex: 1;
+}
+
+.track-5 .six {
+    flex: 6;
+}
+
+.track-5 .seven {
+    flex: 2;
+}
+
+.track-5 .eight {
+    flex: 4;
+}
+
+.track-5 .nine {
+    flex: 4;
+}
+
+.track-5 .ten {
+    flex: 3;
+}
+
+.track-5 .eleven {
+    flex: 1;
+}
+
+.track-6 .clip {
+    background-color: rgb(203, 0, 0);
+}
+
+.track-6 .clip:hover {
+    background-color: rgb(252, 55, 55);
+    border: 1px solid white;
+}
+
+.track-6 .clip:active {
+    background-color: rgb(93, 0, 0);
+}
+
+.track-6 .one {
+    flex: 4;
+}
+
+.track-6 .two {
+    flex: 6;
+}
+
+.track-6 .three {
+    flex: 1;
+}
+
+.track-6 .four {
+    flex: 5;
+}
+
+.track-6 .five {
+    flex: 4;
+}
+
+.track-6 .six {
+    flex: 5;
+}
+
+.track-6 .seven {
+    flex: 3;
+}
+
+.track-6 .eight {
+    flex: 6;
+}
+
+.track-6 .nine {
+    flex: 4;
+}
+
+.track-7 .clip {
+    background-color: rgb(206, 153, 255);
+}
+
+.track-7 .clip:hover {
+    background-color: rgb(225, 195, 254);
+    border: 1px solid white;
+}
+
+.track-7 .clip:active {
+    background-color: rgb(192, 124, 255);
+}
+
+.track-7 .one {
+    flex: 3;
+}
+
+.track-7 .two {
+    flex: 4;
+}
+
+.track-7 .three {
+    flex: 15;
+}
+
+.track-7 .four {
+    flex: 8;
+}
+
+.track-7 .five {
+    flex: 6;
+}
+
+.track-8 .clip {
+    background-color: rgb(32, 185, 70);
+}
+
+.track-8 .clip:hover {
+    background-color: rgb(103, 230, 135);
+    border: 1px solid white;
+}
+
+.track-8 .clip:active {
+    background-color: rgb(14, 114, 39);
+}
+
+.track-8 .one {
+    flex: 17;
+}
+
+.track-8 .two {
+    flex: 2;
+}
+
+.track-8 .three {
+    flex: 1;
+}
+
+.track-8 .four {
+    flex: 2;
+}
+
+.track-8 .five {
+    flex: 17;
+}
+
+.track-9 .blank {
+    flex: 1;
+}
