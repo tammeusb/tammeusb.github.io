@@ -28,7 +28,7 @@ button.play, button.stop {
     z-index: 1;
     height: inherit;
     left: 20vw;
-    width: 3px;
+    width: 0px;
     background-color: white;
 }
 

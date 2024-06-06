@@ -38,7 +38,7 @@ sfcPlay.addEventListener('click', () => {
 
 
 sfcStop.addEventListener('click', () => {
-    if (leftPosition > 20) {
+    if (leftPosition > 20 && sfcMix.currentTime > 0) {
         console.log('stop')
         sfcMix.pause();
         sfcMix.currentTime = 0;    
@@ -49,9 +49,10 @@ sfcStop.addEventListener('click', () => {
 
 function moveSfcHead() {
     let count = 0;
-    
+
     timer = setInterval(function() {
         sfcHead.style.left = leftPosition + 'vw';
+        sfcHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
         if (leftPosition > 80) {
@@ -63,7 +64,8 @@ function moveSfcHead() {
 
 function resetPosition() {
     leftPosition = 20;
-    sfcHead.style.left = leftPosition + 'vh';
+    sfcHead.style.width = "0px";
+    //sfcHead.style.left = leftPosition + 'vh';
 }
 
 fsPlay.addEventListener('click', () => {
@@ -77,7 +79,7 @@ fsPlay.addEventListener('click', () => {
 });
 
 fsStop.addEventListener('click', () => {
-    if (leftPosition > 20) {
+    if (leftPosition > 20 && fsMix.currentTime > 0) {
         console.log('stop')
         fsMix.pause();
         fsMix.currentTime = 0;    
@@ -92,6 +94,7 @@ function moveFSHead() {
     
     timer = setInterval(function() {
         fsHead.style.left = leftPosition + 'vw';
+        fsHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
         if (leftPosition > 80) {
@@ -103,5 +106,6 @@ function moveFSHead() {
 
 function resetFSPosition() {
     leftPosition = 20;
-    fsHead.style.left = leftPosition + 'vh';
+    fsHead.style.width = "0px";
+    //fsHead.style.left = leftPosition + 'vh';
 }
