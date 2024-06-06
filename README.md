@@ -1,11 +1,8 @@
 Practicing building a website for sound editing and design
 
 Most Recent Commit:
--Moved tracks 1,2,3 to bottom of fun station 
-so that sfx are clicked first
--tweaked timing of fs reel
--add CSS on :action and :hover to fs reel
--removed border on :hover/action from sfc reel
+-make box shadow and SVG waveform transparent and responsive
+-change blend mode of SVG waveform
 
 To do:
 -add sound to fs-3x1

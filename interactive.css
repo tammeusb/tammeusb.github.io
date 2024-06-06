@@ -34,11 +34,11 @@ button.play, button.stop {
 
 .clip {
     background-image: url("images/clip.svg");
-    background-position: 50% 70%;
+    background-position: 50% 100%;
     background-repeat: repeat-x;
-    background-size: 100px 100px;
-
-    box-shadow: 0 0 5px 1px rgb(0, 0, 0) inset;
+    background-size: 7vw;
+    background-blend-mode: hard-light;
+    box-shadow: 0 0 0.5vw 1px rgb(0, 0, 0) inset;
 }
 
 .sfc .blank, 
