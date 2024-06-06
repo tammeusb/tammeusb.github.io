@@ -7,8 +7,10 @@ for (let i = 0; i < clips.length; i++) {
     });
 }
 
+let audio = null;
+
 function playAudio (id) {
-    const audio = new Audio(id);
+    audio = new Audio(id);
     audio.play();
 }
 
@@ -80,7 +82,7 @@ fsPlay.addEventListener('click', () => {
 
 fsStop.addEventListener('click', () => {
     if (leftPosition > 20 && fsMix.currentTime > 0) {
-        console.log('stop')
+        console.log('stop');
         fsMix.pause();
         fsMix.currentTime = 0;    
         clearInterval(timer);
@@ -101,7 +103,7 @@ function moveFSHead() {
             clearInterval(timer);
             resetFSPosition();
         }
-    },170);
+    },210);
 }
 
 function resetFSPosition() {
