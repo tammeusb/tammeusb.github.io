@@ -3,7 +3,7 @@ button.play, button.stop {
     height: 4rem;
 }
 
-.design {
+.sfc, .fun-station {
     width: 60vw;
     height: 31vw;
 
@@ -16,13 +16,13 @@ button.play, button.stop {
     background-color: rgb(98, 98, 98);
 }
 
-.design div {
+.sfc div, .fun-station div {
     display: flex;
     position: relative;
     height: calc(30vw / 10.333);
 }
 
-.design span.playhead {
+.sfc span.playhead, .fun-station span.playhead {
     display: inline-block;
     position: absolute;
     z-index: 1;
@@ -41,11 +41,188 @@ button.play, button.stop {
     box-shadow: 0 0 5px 1px rgb(0, 0, 0) inset;
 }
 
-.track-0 .blank {
+.sfc .blank, 
+.fun-station .blank {
+    background-color: grey;
+}
+
+.track-0 .blank, .fs-0 .blank {
     flex: 1;
 }
 
-.track-1 .clip {
+.fs-1 .clip {
+    background-color: rgb(184, 42, 184);
+}
+
+.fs-1 .one {
+    flex: 15;
+}
+
+.fs-1 .two {
+    flex: 8;
+}
+
+.fs-1 .three {
+    flex: 3;
+}
+
+.fs-1 .four {
+    flex: 2;
+}
+
+.fs-2 .clip {
+    background-color: rgb(29, 180, 29);
+}
+
+.fs-2 .one {
+    flex: 30;
+}
+
+.fs-2 .two {
+    flex: 2;
+}
+
+.fs-2 .three {
+    flex: 1 ;
+}
+
+.fs-3 .clip {
+    background-color: rgb(255, 0, 157);
+}
+
+.fs-3 .one {
+    flex: 1;
+}
+
+.fs-3 .two {
+    flex: 4;
+}
+
+.fs-3 .three {
+    flex: 24;
+}
+
+.fs-4 .clip {
+    background-color: rgb(135, 199, 229);
+}
+
+.fs-4 .one {
+    flex: 4;
+}
+
+.fs-4 .two {
+    flex: 6;
+}
+
+.fs-4 .three {
+    flex: 2;
+}
+
+.fs-4 .four {
+    flex: 5;
+}
+
+.fs-4 .five {
+    flex: 4;
+}
+
+.fs-4 .six {
+    flex: 4;
+}
+
+.fs-5 .clip {
+    background-color: rgb(255, 255, 116);
+}
+
+.fs-5 .one {
+    flex: 1;
+}
+
+.fs-5 .two {
+    flex: 3;
+}
+
+.fs-5 .three {
+    flex: 3;
+}
+
+.fs-5 .four {
+    flex: 5;
+}
+
+.fs-5 .five {
+    flex: 10;
+}
+
+.fs-6 .clip {
+    background-color: rgb(0, 128, 53);
+}
+
+.fs-6 .one {
+    flex: 2;
+}
+
+.fs-6 .two {
+    flex: 8;
+}
+
+.fs-6 .three {
+    flex: 2;
+}
+
+.fs-6 .four {
+    flex: 8;
+}
+
+.fs-6 .five {
+    flex: 2;
+}
+
+.fs-7 .clip {
+    background-color: rgb(30, 95, 248);
+}
+
+.fs-7 .one {
+    flex: 2;
+}
+
+.fs-7 .two {
+    flex: 6;
+}
+
+.fs-7 .three {
+    flex: 8;
+}
+
+.fs-7 .four {
+    flex: 3; 
+}
+
+.fs-7 .five {
+    flex: 9;
+}
+
+.fs-8 .clip {
+    background-color: rgb(82, 206, 82);
+}
+
+.fs-8 .one {
+    flex: 4;
+}
+
+.fs-8 .two {
+    flex: 7;
+}
+
+.fs-8 .three {
+    flex: 20;
+}
+
+.fs-9 .one {
+    flex: 1;
+}
+
+.track-1 .clip {    
     background-color: green;
 }
 
@@ -115,10 +292,6 @@ button.play, button.stop {
 
 .track-3 .clip:active {
     background-color: rgb(42, 17, 64);
-}
-
-.design .blank {
-    background-color: grey;
 }
 
 .track-3 .zero {

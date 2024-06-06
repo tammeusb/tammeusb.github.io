@@ -1,5 +1,7 @@
 Practicing building a website for sound editing and design
 
 Most Recent Commit:
--add media queries for quote responsiveness
--change a few font styles to be more responsive
+-duplicate interactive reel for more immersive
+Fun Station content
+-style fun station interactive reel to match
+Pro Tools session via flexbox
