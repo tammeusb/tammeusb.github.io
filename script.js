@@ -12,41 +12,46 @@ function playAudio (id) {
     audio.play();
 }
 
-const playButton = document.querySelector('button.play');
-const stopButton = document.querySelector('button.stop');
-const playHead = document.querySelector('.playhead');
+const sfcPlay = document.querySelector('button.sfc-play');
+const sfcStop = document.querySelector('button.sfc-stop');
+const sfcHead = document.querySelector('.sfc-playhead');
+
+const fsPlay = document.querySelector('button.fs-play');
+const fsStop = document.querySelector('button.fs-stop');
+const fsHead = document.querySelector('.fs-playhead');
 
 let timer = null;
 
 let leftPosition = 20;
-const fullMix = new Audio('audio/SFC_website_stereo.wav');
+const sfcMix = new Audio('audio/SFC_website_stereo.wav');
+const fsMix = new Audio('audio/funstation/fs_fullMix.wav');
 
-playButton.addEventListener('click', () => {
+sfcPlay.addEventListener('click', () => {
     console.log('click');
     if (leftPosition > 20) {    
         console.log('already running');
         return 'already running';
     }
-    movePlayhead();
-    fullMix.play();
+    moveSfcHead();
+    sfcMix.play();
 });
 
 
-stopButton.addEventListener('click', () => {
+sfcStop.addEventListener('click', () => {
     if (leftPosition > 20) {
         console.log('stop')
-        fullMix.pause();
-        fullMix.currentTime = 0;    
+        sfcMix.pause();
+        sfcMix.currentTime = 0;    
         clearInterval(timer);
         resetPosition();
     }  
 });    
 
-function movePlayhead() {
+function moveSfcHead() {
     let count = 0;
     
     timer = setInterval(function() {
-        playHead.style.left = leftPosition + 'vw';
+        sfcHead.style.left = leftPosition + 'vw';
         leftPosition += 1;
         console.log(leftPosition);
         if (leftPosition > 80) {
@@ -58,5 +63,45 @@ function movePlayhead() {
 
 function resetPosition() {
     leftPosition = 20;
-    playHead.style.left = leftPosition + 'vh';
+    sfcHead.style.left = leftPosition + 'vh';
+}
+
+fsPlay.addEventListener('click', () => {
+    console.log('click');
+    if (leftPosition > 20) {    
+        console.log('already running');
+        return 'already running';
+    }
+    moveFSHead();
+    fsMix.play();
+});
+
+fsStop.addEventListener('click', () => {
+    if (leftPosition > 20) {
+        console.log('stop')
+        fsMix.pause();
+        fsMix.currentTime = 0;    
+        clearInterval(timer);
+        resetFSPosition();
+    }  
+}); 
+
+
+function moveFSHead() {
+    let count = 0;
+    
+    timer = setInterval(function() {
+        fsHead.style.left = leftPosition + 'vw';
+        leftPosition += 1;
+        console.log(leftPosition);
+        if (leftPosition > 80) {
+            clearInterval(timer);
+            resetFSPosition();
+        }
+    },170);
+}
+
+function resetFSPosition() {
+    leftPosition = 20;
+    fsHead.style.left = leftPosition + 'vh';
 }

@@ -22,7 +22,7 @@ button.play, button.stop {
     height: calc(30vw / 10.333);
 }
 
-.sfc span.playhead, .fun-station span.playhead {
+.sfc-playhead, .fs-playhead {
     display: inline-block;
     position: absolute;
     z-index: 1;
