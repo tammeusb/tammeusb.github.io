@@ -21,16 +21,17 @@ const sfcHead = document.querySelector('.sfc-playhead');
 const fsPlay = document.querySelector('button.fs-play');
 const fsStop = document.querySelector('button.fs-stop');
 const fsHead = document.querySelector('.fs-playhead');
+const fsReel = document.querySelector('.fun-station');
 
 let timer = null;
+let leftPosition = 15;
 
-let leftPosition = 20;
 const sfcMix = new Audio('audio/SFC_website_stereo.wav');
 const fsMix = new Audio('audio/funstation/fs_fullMix_v2.wav');
 
 sfcPlay.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 20) {    
+    if (leftPosition > 15) {    
         console.log('already running');
         return 'already running';
     }
@@ -40,7 +41,7 @@ sfcPlay.addEventListener('click', () => {
 
 
 sfcStop.addEventListener('click', () => {
-    if (leftPosition > 20 && sfcMix.currentTime > 0) {
+    if (leftPosition > 15 && sfcMix.currentTime > 0) {
         console.log('stop')
         sfcMix.pause();
         sfcMix.currentTime = 0;    
@@ -57,7 +58,7 @@ function moveSfcHead() {
         sfcHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
-        if (leftPosition > 80) {
+        if (leftPosition > 85) {
             clearInterval(timer);
             resetPosition();
         }
@@ -65,14 +66,14 @@ function moveSfcHead() {
 }
 
 function resetPosition() {
-    leftPosition = 20;
+    leftPosition = 15;
     sfcHead.style.width = "0px";
     //sfcHead.style.left = leftPosition + 'vh';
 }
 
 fsPlay.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 20) {    
+    if (leftPosition > 15) {    
         console.log('already running');
         return 'already running';
     }
@@ -81,7 +82,7 @@ fsPlay.addEventListener('click', () => {
 });
 
 fsStop.addEventListener('click', () => {
-    if (leftPosition > 20 && fsMix.currentTime > 0) {
+    if (leftPosition > 15 && fsMix.currentTime > 0) {
         console.log('stop');
         fsMix.pause();
         fsMix.currentTime = 0;    
@@ -99,7 +100,7 @@ function moveFSHead() {
         fsHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
-        if (leftPosition > 80) {
+        if (leftPosition > 85) {
             clearInterval(timer);
             resetFSPosition();
         }
@@ -107,7 +108,7 @@ function moveFSHead() {
 }
 
 function resetFSPosition() {
-    leftPosition = 20;
+    leftPosition = 15;
     fsHead.style.width = "0px";
     //fsHead.style.left = leftPosition + 'vh';
 }

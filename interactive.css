@@ -4,8 +4,8 @@ button.play, button.stop {
 }
 
 .sfc, .fun-station {
-    width: 60vw;
-    height: 31vw;
+    width: 70vw;
+    height: 30vw;
 
     display: flex;
     flex-direction: column;
@@ -20,16 +20,33 @@ button.play, button.stop {
     display: flex;
     position: relative;
     height: calc(30vw / 10.333);
+    overflow:hidden
 }
+
 
 .sfc-playhead, .fs-playhead {
     display: inline-block;
     position: absolute;
     z-index: 1;
-    height: inherit;
+    height: 30vw;
     left: 20vw;
     width: 0px;
     background-color: white;
+}
+
+
+@media screen and (width < 1000px) {
+    .sfc, .fun-station {
+        height: 46vw;
+    }
+
+    .sfc div, .fun-station div {
+        height: calc(46vw / 10);
+    }
+
+    .sfc-playhead, .fs-playhead {
+        height: 45vw;
+    }
 }
 
 .clip {
