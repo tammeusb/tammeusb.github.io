@@ -1,14 +1,46 @@
-.fs-play, .fs-stop, .sfc-play, .sfc-stop {
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.play-container, .stop-container {
     position: relative;
     width: calc(30px + 4vw);
     height: calc(30px + 4vw);
 
+    display: inline-block;
     border-radius: 10%;
 }
 
-.fs-play:hover{
-    background-color: aliceblue;
+.fs-play, .fs-stop, .sfc-play, .sfc-stop {
+    height: 100%;
+    width: 100%;    
+}
 
+.overlay {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    opacity: 0;
+    border-radius: 10%;
+}
+
+.play-container:hover .overlay, .stop-container:hover .overlay {
+    opacity: 0.3;
+}
+
+.play-container:active .overlay, .stop-container:active .overlay {
+    opacity: 0.3;
+    background-color: black;
 }
 
 .sfc, .fun-station {
@@ -18,6 +50,7 @@
     display: flex;
     flex-direction: column;
     gap: 2px;
+    margin-bottom: 50px;
 
     border: 10px solid black;
     border-radius: 10px;
@@ -50,7 +83,7 @@
     }
 
     .sfc div, .fun-station div {
-        height: calc(46vw / 10);
+        height: calc(46vw / 11.25);
     }
 
     .sfc-playhead, .fs-playhead {
@@ -167,27 +200,27 @@
 }
 
 .fs-4 .one {
-    flex: 4;
-}
-
-.fs-4 .two {
     flex: 6;
 }
 
+.fs-4 .two {
+    flex: 10;
+}
+
 .fs-4 .three {
-    flex: 2;
+    flex: 4;
 }
 
 .fs-4 .four {
-    flex: 5;
+    flex: 10;
 }
 
 .fs-4 .five {
-    flex: 4;
+    flex: 10;
 }
 
 .fs-4 .six {
-    flex: 4;
+    flex: 10;
 }
 
 .fs-5 .clip {
@@ -219,7 +252,7 @@
 }
 
 .fs-5 .five {
-    flex: 10;
+    flex: 15;
 }
 
 .fs-6 .clip {
@@ -235,7 +268,7 @@
 }
 
 .fs-6 .one {
-    flex: 2;
+    flex: 3;
 }
 
 .fs-6 .two {
@@ -247,7 +280,7 @@
 }
 
 .fs-6 .four {
-    flex: 2;
+    flex: 6;
 }
 
 .fs-6 .five {
@@ -255,7 +288,7 @@
 }
 
 .fs-6 .six {
-    flex: 2;
+    flex: 5 ;
 }
 
 .fs-7 .clip {
@@ -271,7 +304,7 @@
 }
 
 .fs-7 .one {
-    flex: 2;
+    flex: 3;
 }
 
 .fs-7 .two {
@@ -279,7 +312,7 @@
 }
 
 .fs-7 .three {
-    flex: 8;
+    flex: 15;
 }
 
 .fs-7 .four {
@@ -287,7 +320,7 @@
 }
 
 .fs-7 .five {
-    flex: 9;
+    flex: 13;
 }
 
 .fs-8 .clip {

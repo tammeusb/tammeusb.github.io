@@ -14,12 +14,12 @@ function playAudio (id) {
     audio.play();
 }
 
-const sfcPlay = document.querySelector('.sfc-play');
-const sfcStop = document.querySelector('.sfc-stop');
+const sfcPlay = document.querySelector('.stupid.play.overlay');
+const sfcStop = document.querySelector('.stupid.stop.overlay');
 const sfcHead = document.querySelector('.sfc-playhead');
 
-const fsPlay = document.querySelector('.fs-play');
-const fsStop = document.querySelector('.fs-stop');
+const fsPlay = document.querySelector('.fs.play.overlay');
+const fsStop = document.querySelector('.fs.stop.overlay');
 const fsHead = document.querySelector('.fs-playhead');
 const fsReel = document.querySelector('.fun-station');
 
@@ -62,7 +62,7 @@ function moveSfcHead() {
             clearInterval(timer);
             resetPosition();
         }
-    },170);
+    },145);
 }
 
 function resetPosition() {
@@ -104,7 +104,7 @@ function moveFSHead() {
             clearInterval(timer);
             resetFSPosition();
         }
-    },210);
+    },190   );
 }
 
 function resetFSPosition() {
