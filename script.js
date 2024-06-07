@@ -23,7 +23,8 @@ const fsStop = document.querySelector('.fs.stop.overlay');
 const fsHead = document.querySelector('.fs-playhead');
 const fsReel = document.querySelector('.fun-station');
 
-let timer = null;
+let funTimer = null;
+let stupidTimer = null;
 let leftPosition = 15;
 
 const sfcMix = new Audio('audio/SFC_website_stereo.wav');
@@ -31,10 +32,11 @@ const fsMix = new Audio('audio/funstation/fs_fullMix_v2.wav');
 
 sfcPlay.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 15) {    
+    if (leftPosition > 15 && sfcMix.currentTime > 0) {    
         console.log('already running');
         return 'already running';
     }
+    if (fsMix.currentTime > 0) resetFSPosition();
     moveSfcHead();
     sfcMix.play();
 });
@@ -42,10 +44,7 @@ sfcPlay.addEventListener('click', () => {
 
 sfcStop.addEventListener('click', () => {
     if (leftPosition > 15 && sfcMix.currentTime > 0) {
-        console.log('stop')
-        sfcMix.pause();
-        sfcMix.currentTime = 0;    
-        clearInterval(timer);
+        console.log('stop') 
         resetPosition();
     }  
 });    
@@ -53,40 +52,40 @@ sfcStop.addEventListener('click', () => {
 function moveSfcHead() {
     let count = 0;
 
-    timer = setInterval(function() {
+    stupidTimer = setInterval(function() {
         sfcHead.style.left = leftPosition + 'vw';
         sfcHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
         if (leftPosition > 85) {
-            clearInterval(timer);
             resetPosition();
         }
     },145);
 }
 
 function resetPosition() {
+    sfcMix.pause();
+    sfcMix.currentTime = 0;   
     leftPosition = 15;
     sfcHead.style.width = "0px";
+    clearInterval(stupidTimer);
     //sfcHead.style.left = leftPosition + 'vh';
 }
 
 fsPlay.addEventListener('click', () => {
     console.log('click');
-    if (leftPosition > 15) {    
+    if (leftPosition > 15 && fsMix.currentTime > 0) {    
         console.log('already running');
         return 'already running';
     }
+    if (sfcMix.currentTime > 0) resetPosition();
     moveFSHead();
     fsMix.play();
 });
 
 fsStop.addEventListener('click', () => {
     if (leftPosition > 15 && fsMix.currentTime > 0) {
-        console.log('stop');
-        fsMix.pause();
-        fsMix.currentTime = 0;    
-        clearInterval(timer);
+        console.log('stop');   
         resetFSPosition();
     }  
 }); 
@@ -95,20 +94,22 @@ fsStop.addEventListener('click', () => {
 function moveFSHead() {
     let count = 0;
     
-    timer = setInterval(function() {
+    funTimer = setInterval(function() {
         fsHead.style.left = leftPosition + 'vw';
         fsHead.style.width = "3px";
         leftPosition += 1;
         console.log(leftPosition);
         if (leftPosition > 85) {
-            clearInterval(timer);
             resetFSPosition();
         }
-    },190   );
+    },190);
 }
 
 function resetFSPosition() {
     leftPosition = 15;
+    fsMix.pause();
+    fsMix.currentTime = 0; 
     fsHead.style.width = "0px";
+    clearInterval(funTimer);
     //fsHead.style.left = leftPosition + 'vh';
 }

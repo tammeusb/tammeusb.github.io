@@ -1,10 +1,8 @@
 Practicing building a website for sound editing and design
 
 Most Recent Commit:
--added hover layer to buttons via positioning
-absolute div.
--fixed track height responsiveness
--tweaked reel timings and fun station flex ratio
+-make play buttons work if opposite reel is playing,
+make opposite play button stop other reel
 
 To do:
 -play and stop buttons stop clip audio
