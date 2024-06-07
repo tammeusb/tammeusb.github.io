@@ -1,6 +1,14 @@
-button.play, button.stop {
-    width: 10rem;
-    height: 4rem;
+.fs-play, .fs-stop, .sfc-play, .sfc-stop {
+    position: relative;
+    width: calc(30px + 4vw);
+    height: calc(30px + 4vw);
+
+    border-radius: 10%;
+}
+
+.fs-play:hover{
+    background-color: aliceblue;
+
 }
 
 .sfc, .fun-station {
@@ -36,6 +44,7 @@ button.play, button.stop {
 
 
 @media screen and (width < 1000px) {
+
     .sfc, .fun-station {
         height: 46vw;
     }

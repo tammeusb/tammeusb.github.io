@@ -14,12 +14,12 @@ function playAudio (id) {
     audio.play();
 }
 
-const sfcPlay = document.querySelector('button.sfc-play');
-const sfcStop = document.querySelector('button.sfc-stop');
+const sfcPlay = document.querySelector('.sfc-play');
+const sfcStop = document.querySelector('.sfc-stop');
 const sfcHead = document.querySelector('.sfc-playhead');
 
-const fsPlay = document.querySelector('button.fs-play');
-const fsStop = document.querySelector('button.fs-stop');
+const fsPlay = document.querySelector('.fs-play');
+const fsStop = document.querySelector('.fs-stop');
 const fsHead = document.querySelector('.fs-playhead');
 const fsReel = document.querySelector('.fun-station');
 
