@@ -26,7 +26,7 @@ let timer = null;
 
 let leftPosition = 20;
 const sfcMix = new Audio('audio/SFC_website_stereo.wav');
-const fsMix = new Audio('audio/funstation/fs_fullMix.wav');
+const fsMix = new Audio('audio/funstation/fs_fullMix_v2.wav');
 
 sfcPlay.addEventListener('click', () => {
     console.log('click');

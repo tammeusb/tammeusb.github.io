@@ -213,18 +213,22 @@ button.play, button.stop {
 }
 
 .fs-6 .two {
-    flex: 8;
+    flex: 4;
 }
 
 .fs-6 .three {
-    flex: 2;
+    flex: 4;
 }
 
 .fs-6 .four {
-    flex: 8;
+    flex: 2;
 }
 
 .fs-6 .five {
+    flex: 8;
+}
+
+.fs-6 .six {
     flex: 2;
 }
 

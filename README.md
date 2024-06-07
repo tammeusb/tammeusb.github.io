@@ -1,10 +1,9 @@
 Practicing building a website for sound editing and design
 
 Most Recent Commit:
--make box shadow and SVG waveform transparent and responsive
--change blend mode of SVG waveform
+-replaced sound of fs_3x1 to be more audible
+-replaced fs_fullMix to exclude lascivious breathing
+-fixed fs_6x2 and fs_6x3 being switched
 
 To do:
--add sound to fs-3x1
--play and stop buttons stop clip audio?
--am I missing an arcade sound effect under voice?
+-play and stop buttons stop clip audio
