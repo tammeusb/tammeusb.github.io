@@ -120,6 +120,8 @@ iframe {
     border: 2px solid black;
     box-shadow: 0 5px 10px black;
     margin-bottom: 50px;
+
+    height: calc(25vw + 90px);
 }
 
 .quote-container {
