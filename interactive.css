@@ -5,6 +5,7 @@
 
     margin-top: 30px;
     margin-bottom: 10px;
+
 }
 
 .play-container, .stop-container {
@@ -13,12 +14,14 @@
     height: calc(30px + 4vw);
 
     display: inline-block;
-    border-radius: 10%;
 }
 
 .fs-play, .fs-stop, .sfc-play, .sfc-stop {
     height: 100%;
     width: 100%;    
+
+    border-radius: 10%;
+    box-shadow: 0 1px 5px black;
 }
 
 .overlay {
@@ -52,7 +55,7 @@
     gap: 2px;
     margin-bottom: 50px;
 
-    border: 10px solid black;
+    border: calc(2px + .75vw) solid black;
     border-radius: 10px;
     background-color: rgb(98, 98, 98);
 }
@@ -83,7 +86,7 @@
     }
 
     .sfc div, .fun-station div {
-        height: calc(46vw / 11.25);
+        height: calc(46vw / 11.5);
     }
 
     .sfc-playhead, .fs-playhead {

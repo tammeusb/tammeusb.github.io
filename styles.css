@@ -7,10 +7,6 @@
 }
 
 :root {
-    --dark-background: rgb(8, 84, 247);
-    --light-background: rgb(8, 84, 247);
-    --light-text: white;
-
     box-sizing: border-box;
     text-align: center;
     line-height: 1.5;
@@ -67,7 +63,7 @@ header {
     font-size: calc(2rem + 4vw);
     padding: 2rem;
     width: 100%;
-    min-height: 20rem;
+    min-height: calc(10rem + 10vw);
     display: flex;
     justify-content: center;
     align-items: center;
