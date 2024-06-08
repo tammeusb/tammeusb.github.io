@@ -60,11 +60,13 @@
     background-color: rgb(98, 98, 98);
 }
 
-.sfc div, .fun-station div {
+.sfc > div, .fun-station > div {
     display: flex;
     position: relative;
     height: calc(30vw / 10.333);
-    overflow:hidden
+    overflow: hidden;
+
+    box-shadow: 0 0 20px 0 rgb(100, 100, 100);
 }
 
 
@@ -85,7 +87,7 @@
         height: 46vw;
     }
 
-    .sfc div, .fun-station div {
+    .sfc > div, .fun-station > div {
         height: calc(46vw / 11.5);
     }
 
