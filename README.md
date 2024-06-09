@@ -1,8 +1,10 @@
 Practicing building a website for sound editing and design
 
 Most Recent Commit:
--added box shadow to track styles
--fix quote-container layout
+-made waveform size responsive to attempt
+compatibility with iOS
 
 To do:
 -play and stop buttons stop clip audio
+-fix background image being too big and
+buttons requiring two clicks on iOS

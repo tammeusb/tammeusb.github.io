@@ -94,7 +94,7 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: calc(1000px + 100vw);
 
     box-shadow: 0 10px 30px black;
 }
