@@ -94,9 +94,15 @@ header {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 300vh;
+    background-size: cover;
 
     box-shadow: 0 10px 30px black;
+}
+
+@supports (-webkit-touch-callout: none) {
+    .waveform {
+        background-attachment: scroll;
+    }
 }
 
 .content,
