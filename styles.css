@@ -16,7 +16,7 @@
 
     --red: 65;
     --green: 60;
-    --blue: 230;
+    --blue: 190;
     --aa-brightness: calc((
         (var(--red) * 299) +
         (var(--green) * 587) +
@@ -206,4 +206,24 @@ iframe {
 
 .logo-container span {
     font-size: calc(1rem + 2vw);
+}
+
+footer {
+    font-style: italic;
+    font-size: calc(0.5rem + 0.75vw);
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(55, 59, 123);
+    box-shadow: 0 0 30px inset rgb(66, 50, 107);
+}
+
+.licenses {
+    display: flex;
+    gap: calc(5px + 2vw);
+    justify-content: center;
+}
+
+.licenses span a {
+    text-decoration: none;
+    color: white;
 }
