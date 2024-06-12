@@ -134,6 +134,16 @@ iframe {
     height: 100%;
   }
 
+.instructions:before {
+    content: "Click ";
+}
+
+@media screen and (width < 1000px) {
+    .instructions:before {
+        content: "Tap ";
+    }
+}
+
 .about-container img {
     border-radius: 50%;
     border: 2px solid black;
